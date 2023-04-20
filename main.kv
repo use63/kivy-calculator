@@ -1,0 +1,140 @@
+#:kivy 2.1.0
+
+<MainLayout>:
+    BoxLayout:
+        orientation::
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 10
+
+        Label:
+            id: screen
+            text: root.screenText
+            color: root.screenColor
+            size_hint: None, None
+            size: 200, 50
+            halign: 'left'
+
+        Button:
+            text: 'C'
+            size_hint: None, None
+            size: 200, 50
+            border_radius: [10]
+            background_color: (1,0,0,1)
+            on_release: root.tulis('C')
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: '7'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('7')
+            Button:
+                text: '8'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('8')
+            Button:
+                text: '9'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('9')
+            Button:
+                text: '+'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                on_release: root.tulis('+')
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: '4'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('4')
+            Button:
+                text: '5'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('5')
+            Button:
+                text: '6'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('6')
+            Button:
+                text: '-'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                on_release: root.tulis('-')
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: '1'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('1')
+            Button:
+                text: '2'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('2')
+            Button:
+                text: '3'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('3')
+            Button:
+                text: 'x'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                on_release: root.tulis('x')
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: 'AC'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,0,0,1)
+                on_release: root.tulis('AC')
+            Button:
+                text: '0'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                background_color: (1,1,0,1)
+                on_release: root.tulis('0')
+            Button:
+                text: '='
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                on_release: root.tulis('=')
+            Button:
+                text: '/'
+                size_hint: None, None
+                size: 50, 50
+                border_radius: [10]
+                on_release: root.tulis('/')
